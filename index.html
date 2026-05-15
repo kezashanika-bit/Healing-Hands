@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREYCEE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+<div class="nav-container">
+<div class="logo">
+<i class="fas fa-utensils"></i>
+<span class="logo-text">Healing Hands Massage</span>
+</div>
+            
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="about.html" class="nav-link">About</a></li>
+<li><a href="menu.html" class="nav-link">Menu</a></li>
+<li><a href="testimonials.html" class="nav-link">Reviews</a></li>
+<li><a href="contact.html" class="nav-link">Contact</a></li>
+</ul>
+  
+<button class="reserve-btn"> <a href="successmodal.html" class="nav-link">Reserve Your Venue </a></button>  
+            
+<div class="mobile-menu-toggle" id="mobileMenuToggle">
+<i class="fas fa-bars"></i>
+</div>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<h1 class="hero-title">H H M</h1>
+<p class="hero-subtitle">Relax deeply <br> Heal completely </p>
+<p class="hero-description">Experience an unforgettable journey through soft skin massages with our best therapists</p>
+<div class="hero-buttons">
+<button class="btn-primary" onclick="scrollToSection('contact')"> <a href="successmodal.html">Book Your Session</a> </button>
+<button class="btn-secondary" onclick="scrollToSection('menu')"> <a href="menu.html"> View Menu</a></button>
+</div>
+</div>
+<div class="scroll-indicator">
+<div class="mouse"></div>
+</div>
+    </section>
+
+<footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>Healing Hands Massage</span>
+                </div>
+                <p class="footer-text">&copy; 2026 Healing Hands Massage. All rights reserved.</p>
+                <p class="footer-tagline">Crafted with passion for relaxation made with softness</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Reservation Confirmed!</h3>
+            <p>Thank you for choosing Healing Hands Massage. We've received your reservation and will send you a confirmation email shortly.</p>
+            <button class="modal-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "CnfdhiG2gFgREz8fB",
+      });
+   })();
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>

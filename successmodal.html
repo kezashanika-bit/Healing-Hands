@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREYCEE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <nav class="navbar" id="navbar">
+<div class="nav-container">
+<div class="logo">
+<i class="fas fa-utensils"></i>
+<span class="logo-text">Healing Hands Massage</span>
+
+</div>
+            
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="about.html" class="nav-link">About</a></li>
+<li><a href="menu.html" class="nav-link">Menu</a></li>
+<li><a href="testimonials.html" class="nav-link">Reviews</a></li>
+<li><a href="contact.html" class="nav-link">Contact</a></li>
+</ul>
+            
+<div class="mobile-menu-toggle" id="mobileMenuToggle">
+<i class="fas fa-bars"></i>
+</div>
+</div>
+</nav><br>
+    <section>
+
+     <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Reservation Confirmed!</h3>
+            <p>Thank you for choosing Mpundu's Imperial Massage. We've received your reservation and will send you a confirmation email shortly.</p>
+            <button class="modal-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+ 
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <div class="reservation-form-wrapper">
+                    <h2 class="form-title">Reserve Your Venue</h2>
+                    <p class="form-subtitle">Book an unforgettable massage experience</p>
+                    
+                    <div class="reservation-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="name@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+250 788-000-000" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Reservation Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <select id="time" required>
+                                <option value="">Select a time</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="17:30">5:30 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                                <option value="21:00">9:30 PM</option>
+                                <option value="21:00">10:00 PM</option>
+                                <option value="21:00">10:30 PM</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Type Of Massage</label>
+                            <select id="guests" required>
+                                <option value="">Select massage type</option>
+                                <option value="1">Sweedish massage</option>
+                                <option value="2">Deep Tissue</option>
+                                <option value="3">Lomi Lomi Massage</option>
+                                <option value="4">Sport Massage</option>
+                                <option value="5">Thai Massage</option>
+                                <option value="6">Myofascial Release</option>
+                                <option value="7">Trigga Point Therapy</option>
+                                <option value="8">Reflexology</option>
+                                <option value="9">Back Massage</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="requests">Special Requests</label>
+                            <textarea id="requests" rows="4" placeholder="Any dietary restrictions or special occasions?"></textarea>
+                        </div>
+
+                        <button class="submit-btn" onclick="submitReservation()">
+                            <i class="fas fa-calendar-check"></i>
+                            Confirm Reservation
+                        </button>
+                    </div>
+                </div>
+
+                
+               
+                        </div>
+                    </div>
+
+                  
+                </div>
+            </div>
+        </div>
+<br><br>
+    <a href="index.html" class="btn"> <button class="reserve-btn">Back To Home </button>  </a><br><br><br>
+
+    </section>
+
+<footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>Healing Hands Massage</span>
+                </div>
+                <p class="footer-text">&copy; 2026 Healing Hands Massage. All rights reserved.</p>
+                <p class="footer-tagline">Crafted with passion for relaxation made with softness</p>
+            </div>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
